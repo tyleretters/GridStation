@@ -2,15 +2,26 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>{{ site.title }} | {{ site.description }}</title>
-{% seo title = false %}
+
+<link rel="canonical" href="{{ site.url }}" />
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="description" content="Draw grids with text." />
+
+<meta property="og:title" content="GridStation" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:description" content="Draw grids with text." />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:site_name" content="GridStation" />
+<meta property="og:image" content="{{ site.url }}/assets/images/grid-station-logo.png">  
+
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="GridStation">
 <meta name="twitter:creator" content="@tyleretters">
 <meta name="twitter:title" content="{{ site.title }} | {{ site.description }}">
 <meta name="twitter:description" content="{{ site.description }}">
 <meta name="twitter:image:src" content="{{ site.url }}/assets/images/grid-station-logo.png">  
-<meta name="og:image" content="{{ site.url }}/assets/images/grid-station-logo.png">  
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ "/assets/stylesheets/style.css" | relative_url }}?{{site.time | date: '%s%N'}}">
 </head>
