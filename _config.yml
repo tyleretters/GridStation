@@ -1,7 +1,7 @@
-title: perfect bootstrap jekyll
-description: the perfect bootstrap jekyll starting theme. xoxo northern information.
-baseurl: /perfect-bootstrap-jekyll
-url: https://tyleretters.github.io/perfect-bootstrap-jekyll
+title: GridStation
+description: Draw grids with text.
+baseurl: /grid-station
+url: https://tyleretters.github.io/grid-station
 permalink: pretty
 sort_by: year, month
 markdown: kramdown
@@ -11,5 +11,3 @@ plugins:
   - jekyll-feed
 include: ['_pages']
 collections_dir: collections
-collections:
-  - examples

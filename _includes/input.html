@@ -1,0 +1,92 @@
+<h2>Input</h2>
+<hr class="yellow">
+<textarea class="gs-input" autofocus></textarea>
+
+
+<h3>Usage</h3>
+<hr class="green">
+<ol>
+  <li>Format your grid with text.</li>
+  <li>Linebreaks are ignored.</li>
+  <li>Follow the format as described below.</li>
+  <li>Cell opacity uses <code>0</code>-<code>f</code> where <code>0</code> is fully transparent and <code>f</code> is fully opaque.</li>
+  <li>Use your operating system's screenshot function to capture. (Line up the crosshairs with the markings on screen.)</li>
+  <li>Save your text locally.</li>
+  <li>If you don't follow the format exactly it won't work. No validation, etc. :)</li>
+  <li><a href="https://github.com/tyleretters/gridstation">Contribute.</a></li>
+</ol>
+<table class="table">
+  <tr>
+    <th>Position</th>
+    <th>Attribute</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><code>width</code></td>
+    <td>integer, number of horizontal (x) cells, default is <code>16</code></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><code>height</code></td>
+    <td>integer, number of vertical (y) cells, default is <code>8</code></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><code>background color</code></td>
+    <td>hexadecimal value, default is <code>#bbbbbb</code></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><code>cell foreground color</code></td>
+    <td>hexadecimal value, default is <code>#fcb400</code></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><code>cell background color</code></td>
+    <td>hexadecimal value, default is <code>#ffffff</code></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><code>border color</code></td>
+    <td>hexadecimal value, default is <code>#000000</code></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><code>cell width</code></td>
+    <td>width in pixels, default <code>10</code></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><code>cell height</code></td>
+    <td>height in pixels, default <code>10</code></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><code>cell spacing</code></td>
+    <td>spacing in pixels, default is <code>4</code></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><code>grid border thickness</code></td>
+    <td>thickness in pixels, default is <code>1</code></td>
+  </tr>
+<tr>
+    <td>11</td>
+    <td><code>cell border thickness</code></td>
+    <td>thickness in pixels, default is <code>1</code></td>
+  </tr>
+  <tr>
+    <td>12 thru (x * y) + 12</td>
+    <td><code>cell opacity</code></td>
+    <td><code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, <code>6</code>, <code>7</code>, <code>8</code>, <code>9</code>, <code>a</code>, <code>b</code>, <code>c</code>, <code>d</code>, <code>e</code>, or <code>f</code></td>
+  </tr>
+</table>
+
+<h3>Default</h3>
+<hr class="blue">
+<pre id="default">
+{% include default.txt %}
+</pre>
+
+

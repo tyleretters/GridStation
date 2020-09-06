@@ -1,2 +1,143 @@
-nav.container-fluid
-  margin-top: 10px
+.sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+
+.monospace
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+
+h1, p
+  @extend .sans-serif
+
+code, pre
+  @extend .monospace
+
+hr.yellow
+  border-top: 4px solid #cba300
+
+hr.red
+  border-top: 4px solid #cf0026
+
+hr.blue
+  border-top: 4px solid #2b5b97
+
+hr.green
+  border-top: 4px solid #038a81
+
+
+.gs-input
+  @extend .monospace
+  width: 100%
+  height: 300px
+  border: 1px solid #000000
+  border-radius: 4px
+  background: #000000
+  color: #fcb400
+  padding: 30px
+
+.gs-output *
+  box-sizing: content-box
+
+.gs-output
+  #grid,
+  #cells-foreground
+    border-style: solid
+    border-radius: 8px
+    background: #000000
+  
+  #cells-foreground
+    position: absolute
+    background: none
+    .val-0
+      opacity: 0
+    .val-1
+      opacity: 0.07
+    .val-2
+      opacity: 0.13
+    .val-3
+      opacity: 0.2
+    .val-4
+      opacity: 0.27
+    .val-5
+      opacity: 0.33
+    .val-6
+      opacity: 0.4
+    .val-7
+      opacity: 0.47
+    .val-8
+      opacity: 0.53
+    .val-9
+      opacity: 0.6
+    .val-10
+      opacity: 0.67
+    .val-11
+      opacity: 0.73
+    .val-12
+      opacity: 0.8
+    .val-13
+      opacity: 0.87
+    .val-14
+      opacity: 0.93
+    .val-15
+      opacity: 1
+
+  .cell
+    display: inline-block
+    border-style: solid
+    border-radius: 2px
+
+  .e,
+  .w
+    width: 24px
+    display: inline-block
+
+  .wrap,
+  .push
+    display: inline-block
+    margin: 10px
+
+  .crosshair
+    width: 20px
+    height: 20px
+    display: inline-block
+    border: 1px solid #000
+
+  .hider
+    width: 5px
+    height: 5px
+    position: absolute
+    background: #fff
+  
+  .nw
+    position: relative
+    border-left-style: none
+    border-top-style: none
+    
+    .hider
+      bottom: -1px
+      right: -1px
+
+  .ne
+    position: relative
+    border-right-style: none
+    border-top-style: none
+
+    .hider
+      bottom: -1px
+      left: -1px
+
+  .sw
+    position: relative
+    border-left-style: none
+    border-bottom-style: none
+
+    .hider
+      top: -1px
+      right: -1px
+
+  .se
+    position: relative
+    border-right-style: none
+    border-bottom-style: none
+
+    .hider
+      top: -1px
+      left: -1px
