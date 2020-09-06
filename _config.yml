@@ -1,7 +1,7 @@
 title: GridStation
 description: Draw grids with text.
-baseurl: /grid-station
-url: https://tyleretters.github.io/grid-station
+baseurl: /gridstation
+url: https://tyleretters.github.io/gridstation
 permalink: pretty
 sort_by: year, month
 markdown: kramdown
