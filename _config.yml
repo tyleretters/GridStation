@@ -1,13 +1,15 @@
 title: GridStation
 description: Draw grids with text.
 baseurl: /GridStation
-url: https://tyleretters.github.io/gridstation
+url: https://tyleretters.github.io/GridStation
 permalink: pretty
 sort_by: year, month
 markdown: kramdown
+theme: minima
 kramdown:
   parse_block_html: true
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 include: ['_pages']
 collections_dir: collections
