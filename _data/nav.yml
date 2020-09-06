@@ -1,0 +1,13 @@
+pages:
+
+- title: home
+  url: /
+
+- title: posts
+  url: /posts
+
+- title: collections
+  url: /collections
+
+- title: about
+  url: /about

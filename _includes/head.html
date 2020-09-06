@@ -1,0 +1,17 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% if page.url == "/" %}<title>{{ site.title }}</title>{% elsif page.title %}<title>{{ page.title }} | {{ site.title }}</title>{% else %}<title>{{ site.title }}</title>{% endif %}
+
+<script src="https://kit.fontawesome.com/bf8e061a12.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ "/assets/stylesheets/style.css" | relative_url }}?{{site.time | date: '%s%N'}}">
+<!-- generate here: https://favicon.io/
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico?v=1" />
+<link rel="mask-icon" href="/mask-icon.svg" color="#ffffff">
+-->
+{% feed_meta %}
+</head>

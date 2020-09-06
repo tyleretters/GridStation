@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- if page.title -%}
+<h1>{{ page.title | escape }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+<ul id="collection">
+  {% assign examples_by_order = site.examples | sort: "order" %}
+  {% for item in site.examples %}
+    <li>
+      <h2>{{ item.name }}</h2>
+      <ul>
+        {% for attribute in item.attributes %}
+        <li>{{ attribute }}</li>
+        {% endfor %}
+      </ul>
+      <p>{{ item.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
