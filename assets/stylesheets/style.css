@@ -56,17 +56,17 @@ hr.green {
     opacity: 0.53; }
   .gs-output #cells-foreground .val-9 {
     opacity: 0.6; }
-  .gs-output #cells-foreground .val-10 {
+  .gs-output #cells-foreground .val-a {
     opacity: 0.67; }
-  .gs-output #cells-foreground .val-11 {
+  .gs-output #cells-foreground .val-b {
     opacity: 0.73; }
-  .gs-output #cells-foreground .val-12 {
+  .gs-output #cells-foreground .val-c {
     opacity: 0.8; }
-  .gs-output #cells-foreground .val-13 {
+  .gs-output #cells-foreground .val-d {
     opacity: 0.87; }
-  .gs-output #cells-foreground .val-14 {
+  .gs-output #cells-foreground .val-e {
     opacity: 0.93; }
-  .gs-output #cells-foreground .val-15 {
+  .gs-output #cells-foreground .val-f {
     opacity: 1; }
 .gs-output .cell {
   display: inline-block;
