@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GridStation | Draw grids with text.</title>
+
+<link rel="canonical" href="https://tyleretters.github.io/GridStation" />
+<meta name="description" content="Draw grids with text." />
+
+<meta property="og:title" content="GridStation" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:description" content="Draw grids with text." />
+<meta property="og:url" content="https://tyleretters.github.io/GridStation" />
+<meta property="og:site_name" content="GridStation" />
+<meta property="og:image" content="https://tyleretters.github.io/GridStation/assets/images/grid-station-logo.png">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="GridStation">
+<meta name="twitter:creator" content="@tyleretters">
+<meta name="twitter:title" content="GridStation | Draw grids with text.">
+<meta name="twitter:description" content="Draw grids with text.">
+<meta name="twitter:image:src" content="https://tyleretters.github.io/GridStation/assets/images/grid-station-logo.png">
+
+<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+<body>
+
+<header class="container-fluid my-3">
+  <div class="row">
+    <div class="col d-flex align-items-center flex-row">
+      <img src="assets/images/grid-station-logo.png" width="100" height="100">
+      <h1 class="d-inline-block ml-3">GridStation</h1>
+    </div>
+  </div>
+</header>
+
+<main class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <h2>Input</h2>
+      <hr class="yellow">
+      <textarea class="gs-input" autofocus></textarea>
+
+
+      <h3>Usage</h3>
+      <hr class="green">
+      <ol>
+        <li>Format your grid with text.</li>
+        <li>Linebreaks are ignored.</li>
+        <li>Follow the format as described below.</li>
+        <li>Cell opacity uses <code>0</code>-<code>f</code> where <code>0</code> is fully transparent and <code>f</code> is fully opaque.</li>
+        <li>Use your operating system's screenshot function to capture. (Line up the crosshairs with the markings on screen.)</li>
+        <li>Save your text locally.</li>
+        <li>If you don't follow the format exactly it won't work. No validation, etc. :)</li>
+        <li><a href="https://github.com/tyleretters/GridStation">Contribute.</a></li>
+      </ol>
+      <table class="table">
+        <tr>
+          <th>Position</th>
+          <th>Attribute</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><code>width</code></td>
+          <td>integer, number of horizontal (x) cells, default is <code>16</code></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><code>height</code></td>
+          <td>integer, number of vertical (y) cells, default is <code>8</code></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><code>background color</code></td>
+          <td>hexadecimal value, default is <code>#bbbbbb</code></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><code>cell foreground color</code></td>
+          <td>hexadecimal value, default is <code>#fcb400</code></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><code>cell background color</code></td>
+          <td>hexadecimal value, default is <code>#ffffff</code></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><code>border color</code></td>
+          <td>hexadecimal value, default is <code>#000000</code></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><code>cell width</code></td>
+          <td>width in pixels, default <code>20</code></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><code>cell height</code></td>
+          <td>height in pixels, default <code>20</code></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><code>cell spacing</code></td>
+          <td>spacing in pixels, default is <code>4</code></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><code>grid border thickness</code></td>
+          <td>thickness in pixels, default is <code>1</code></td>
+        </tr>
+      <tr>
+          <td>11</td>
+          <td><code>cell border thickness</code></td>
+          <td>thickness in pixels, default is <code>1</code></td>
+        </tr>
+        <tr>
+          <td>12 thru (x * y) + 12</td>
+          <td><code>cell opacity</code></td>
+          <td><code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, <code>6</code>, <code>7</code>, <code>8</code>, <code>9</code>, <code>a</code>, <code>b</code>, <code>c</code>, <code>d</code>, <code>e</code>, or <code>f</code></td>
+        </tr>
+      </table>
+
+      <h3>Default</h3>
+      <hr class="blue">
+      <pre id="default">
+16 8 #bbbbbb #fcb400 #ffffff #000000 20 20 4 1 1
+0 1 2 3 4 5 6 7 8 9 a b c d e f
+f e d c b a 9 8 7 6 5 4 3 2 1 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 f f f f f 0 0 f f f f f 0 0
+0 0 f 0 0 0 0 0 0 f 0 0 0 0 0 0
+0 0 f 0 f f f 0 0 f f f f f 0 0
+0 0 f 0 0 0 f 0 0 0 0 0 0 f 0 0
+0 0 f f f f f 0 0 f f f f f 0 0
+</pre>
+
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <h2>Output</h2>
+      <hr class="red">
+      <div class="gs-output">
+        <div class="gs-row">
+          <div class="crosshair nw"><div class="hider"></div></div>
+          <div class="push"></div>
+          <div class="crosshair ne"><div class="hider"></div></div>
+        </div>
+        <div class="gs-row">
+          <div class="w">&nbsp;</div>
+          <div class="wrap">
+            <div id="cells-foreground"></div>
+            <div id="grid"></div>
+          </div>
+          <div class="e">&nbsp;</div>
+        </div>
+        <div class="gs-row">
+          <div class="crosshair sw"><div class="hider"></div></div>
+          <div class="push"></div>
+          <div class="crosshair se"><div class="hider"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="container-fluid my-3">
+  <div class="row">
+    <div class="col d-flex align-items-center flex-row">
+      <a href="https://nor.the-rn.info"><img src="assets/images/northern-information.svg" width="100" height="100"></a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/javascript/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/javascript/script.js"></script>
+</body>
+</html>
